@@ -1,8 +1,7 @@
 from django.urls import path
-
-from .views import getAPI, obtener_breeds
+from galeria.views import obtener_breeds,getAlbums
 
 urlpatterns = [
-    path('', obtener_breeds, name='obtener_breeds'),
-    path('api/',getAPI, name='getAPI'),
+    path('',obtener_breeds),
+     path('album/',getAlbums),
 ]
